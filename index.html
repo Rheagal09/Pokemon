@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+   <!--  <link href='Extra.css' rel='stylesheet'>
+ -->    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <title>Hello, world!</title>
+  </head>
+  <body>
+    <div class="container" id="container">
+      <h1>Search any Pokemon</h1>
+      <hr>
+      <br>
+  <div class="row"id="SearchRow" >
+        <div class="col-md-6">
+            <div id="custom-search-input">
+                <div class="input-group col-md-12">
+                    <input type="text" class="form-control input-lg" placeholder="Search" id="InpSearch">
+                    <span class="input-group-btn">
+                        <button class="btn btn-info btn-lg" type="button" id="SearchBtn">
+                            <i class="glyphicon glyphicon-search"></i>
+                        </button>
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-2">
+          <div class="dropdown">
+             <button class="btn btn-primary btn-lg dropdown-toggle" type="button" data-toggle="dropdown" id="Amt-Btn">Amount
+               <span class="caret"></span></button>
+              <ul class="dropdown-menu" id="Amount">
+                <li><a href="#1" selected="selected">1</a></li>
+                <li><a href="#2">2</a></li>
+                <li><a href="#3">3</a></li>
+                <li><a href="#4">4</a></li>
+                <li><a href="#All" >All</a></li>
+              </ul>
+          </div>
+          <input type="hidden" id="inpt-Amt" value='All'>
+        </div>
+        <div class="col-md-2">
+          <div class="dropdown">
+             <button class="btn btn-primary btn-lg dropdown-toggle" type="button" data-toggle="dropdown" id="Filter-Btn">Filter
+               <span class="caret"></span></button>
+              <ul class="dropdown-menu" id="Filter">
+                <li><a href="#name" selected="selected">Name</a></li>
+                <li><a href="#type">Types</a></li>
+                <li><a href="#nationalPokedexNumber">National Pokedex Number</a></li>
+                <li><a href="#artist">Artist</a></li>
+                <li><a href="#rarity">Rarity</a></li>
+                <li><a href="#resistances">Resistances</a></li>
+                <li><a href="#weaknesses">Weaknesses</a></li>
+             </ul>
+          </div>
+          <input type='hidden' id="inpt-Filter" value="name">
+        </div>
+        <input type='hidden' id='inpt-Type'>
+      </div>
+       <div style='height:50px;width:1000px'></div>
+       <div id="TableDiv" style='display:none'>
+       <table class="table table-responsive table-striped" id="Result">
+        <thead>
+        <tr><th>Name</th>
+          <th>Pokedex Number</th>
+          <th>Type</th>
+          <th>Rarity</th>
+          <th>Artist</th>
+        </tr>
+      </thead>
+      <tbody id="ResultBody">
+      </tbody>
+    </table>
+  </div>
+    </div>
+    <script src="Poke.js"></script>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+   <!--  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  </body>
+</html>
